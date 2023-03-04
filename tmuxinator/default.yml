@@ -1,0 +1,13 @@
+# https://github.com/tmuxinator/tmuxinator
+
+name: default
+root: ~/
+
+windows:
+  - "":
+  - docs:
+      root: ~/Dropbox/docs
+  - dropbox:
+      root: ~/Dropbox
+  - repl: jshell
+  - ws: mkws && cdws
