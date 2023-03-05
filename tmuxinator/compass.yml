@@ -1,0 +1,52 @@
+# https://github.com/tmuxinator/tmuxinator
+
+name: compass
+root: ~/
+on_project_start: ls && mkws
+
+windows:
+    - "":
+        # Get custom dimensions from `tmux list-windows`
+        layout: 47fc,245x37,0,0{148x37,0,0,0,96x37,149,0[96x18,149,0,13,96x18,149,19,14]}
+        panes:
+            - "":
+            - yawsso:
+                - workon yawsso
+                - yawsso -p gamma-bw-infra:default
+            - app-domain:
+                - compass network connect app-domain
+    - "":
+    - "":
+    - shell:
+        layout: even-horizontal
+        panes:
+            - jshell:
+                - JENV_VERSION=11.0.15 jshell
+            - ipython:
+                - workon ipython
+                - ipython
+    - ws:
+        - cdws
+    - build:
+        root: ~/workspace/src/urbancompass/src/python3/uc/agent_data_platform/pipelines_scripts/
+        panes:
+            - # export PIPELINES_API_TOKEN=
+    - k8s:
+        layout: 1663,235x37,0,0{148x37,0,0,6,86x37,149,0,13}
+        panes:
+            - "":
+                - kubeon
+            - kafka-manager:
+                - kubeon
+                - kubectl -n bwi port-forward service/kafka-manager 9000:9000
+    - bazel:
+        root: ~/workspace/src/urbancompass/
+        panes:
+            - # compass workspace test //tests/java/com/urbancompass/deals_platform/deals_workflow:test --extra-cmd-args="--test_output=errors --test_summary=detailed"
+    - urbancompass:
+        root: ~/workspace/src/urbancompass/
+        panes:
+          - git ff-up &
+    - psql:
+        - cdws
+        - psql-rds.sh
