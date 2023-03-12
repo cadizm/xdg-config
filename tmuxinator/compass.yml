@@ -12,7 +12,8 @@ windows:
             - "":
             - yawsso:
                 - workon yawsso
-                - yawsso -p gamma-bw-infra:default
+                - # yawsso -p gamma-bw-infra:default
+                - yawsso -p gamma-deals-platform:default gamma-bw-infra
             - app-domain:
                 - compass network connect app-domain
     - "":
