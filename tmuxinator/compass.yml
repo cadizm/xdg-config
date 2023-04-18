@@ -12,8 +12,10 @@ windows:
             - "":
             - yawsso:
                 - workon yawsso
-                - # yawsso -p gamma-bw-infra:default
-                - yawsso -p gamma-deals-platform:default gamma-bw-infra
+                - # yawsso -p gamma-bw-afc:default gamma-bw-infra  # DMS
+                - # yawsso -p gamma-bw-infra:default  # BWI
+                - # yawsso -p gamma-deals-platform:default gamma-bw-infra  # DWS
+                - yawsso --default
             - app-domain:
                 - compass network connect app-domain
     - "":
@@ -31,7 +33,8 @@ windows:
     - build:
         root: ~/workspace/src/urbancompass/src/python3/uc/agent_data_platform/pipelines_scripts/
         panes:
-            - # export PIPELINES_API_TOKEN=
+            - pipelines:
+                - workon pipelines
     - k8s:
         layout: 1663,235x37,0,0{148x37,0,0,6,86x37,149,0,13}
         panes:
