@@ -1,0 +1,7 @@
+# https://github.com/tmuxinator/tmuxinator
+
+name: neovim
+root: ~/
+
+windows:
+  - "":
