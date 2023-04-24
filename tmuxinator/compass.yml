@@ -24,7 +24,7 @@ windows:
         layout: even-horizontal
         panes:
             - jshell:
-                - JENV_VERSION=11.0.15 jshell
+                - JENV_VERSION=11.0.19 jshell
             - ipython:
                 - workon ipython
                 - ipython
