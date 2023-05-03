@@ -20,7 +20,7 @@ windows:
                 - compass network connect app-domain
     - "":
     - "":
-    - shell:
+    - repl:
         layout: even-horizontal
         panes:
             - jshell:
