@@ -5,9 +5,12 @@ root: ~/
 
 windows:
   - "":
-  - docs:
-      root: ~/Dropbox/docs
+  - "":
   - dropbox:
       root: ~/Dropbox
-  - repl: jshell
-  - ws: mkws && cdws
+  - repl:
+      - workon math
+      - ipython
+  - ws:
+      - mkws
+      - cdws
