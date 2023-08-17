@@ -37,6 +37,11 @@
 "     "when": "editorTextFocus && neovim.mode == 'insert'"
 "   },
 "   {
+"     "key": "ctrl+d",
+"     "command": "deleteRight",
+"     "when": "editorTextFocus && neovim.mode == 'insert'"
+"   },
+"   {
 "     "key": "cmd+d",
 "     "command": "deleteWordRight",
 "     "when": "editorTextFocus && neovim.mode == 'insert'"
