@@ -37,18 +37,27 @@
 "     "when": "editorTextFocus && neovim.mode == 'insert'"
 "   },
 "   {
-"     "key": "ctrl+d",
-"     "command": "deleteRight",
-"     "when": "editorTextFocus && neovim.mode == 'insert'"
-"   },
-"   {
 "     "key": "cmd+d",
 "     "command": "deleteWordRight",
 "     "when": "editorTextFocus && neovim.mode == 'insert'"
 "   },
 "   {
+"     "key": "ctrl+d",
+"     "command": "deleteRight",
+"     "when": "editorTextFocus && neovim.mode == 'insert'"
+"   },
+"
+"   {
 "     "key": "cmd+backspace",
 "     "command": "-deleteAllLeft",
 "     "when": "textInputFocus && !editorReadonly"
+"   },
+"   {
+"     "key": "shift+cmd+w",
+"     "command": "-workbench.action.closeWindow"
+"   },
+"   {
+"     "key": "shift+cmd+w",
+"     "command": "openEditors.closeAll"
 "   }
 " ]
