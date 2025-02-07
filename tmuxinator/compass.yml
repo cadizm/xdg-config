@@ -24,14 +24,14 @@ windows:
         layout: even-horizontal
         panes:
             - jshell:
-                - JENV_VERSION=20.0.2 jshell
+                - JENV_VERSION=21.0.6 jshell
             - ipython:
                 - workon ipython
                 - ipython
     - ws:
         - cdws
     - build:
-        root: ~/workspace/src/urbancompass/src/python3/uc/agent_data_platform/pipelines_scripts/
+        root: ~/workspace/src/urbancompass/src/python3/uc/deals_platform/pipelines_scripts/
         panes:
             - pipelines:
                 - workon pipelines
@@ -54,3 +54,5 @@ windows:
     - psql:
         - cdws
         - psql-rds.sh
+    - grpcreq:
+        root: ~/workspace/requests/grpcreq/
