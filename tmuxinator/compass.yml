@@ -48,11 +48,20 @@ windows:
         panes:
             - echo 'compass workspace test //tests/java/com/urbancompass/deals_platform/deals_workflow:test --extra-cmd-args="--test_output=errors --test_summary=detailed"'
     - urbancompass:
+        layout: d723,318x42,0,0{159x42,0,0,17,158x42,160,0,20}
         root: ~/workspace/src/urbancompass/
         panes:
           - git fetch &
+          - echo "./scripts/run_apiv3.sh --dms-translation-service=grpc://localhost:11339"
     - psql:
-        - cdws
-        - psql-rds.sh
+        root: ~/workspace/queries/
     - grpcreq:
         root: ~/workspace/requests/grpcreq/
+    - uc-frontend:
+        root: ~/workspace/src/uc-frontend/
+        # Get custom dimensions from `tmux list-windows`
+        layout: 47fc,245x37,0,0{148x37,0,0,0,96x37,149,0[96x18,149,0,13,96x18,149,19,14]}
+        panes:
+          - git fetch &
+          - echo "./scripts/localnginx.sh --use-local-apiv3 dms_translation_service"
+          - echo "cd apps/lab && ./pnpm start"
