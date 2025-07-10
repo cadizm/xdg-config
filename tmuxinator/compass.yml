@@ -16,8 +16,6 @@ windows:
                 - # yawsso -p gamma-bw-infra:default
                 - echo "yawsso -p gamma-deals-platform:default"
                 - yawsso --default
-            - app-domain:
-                - compass network connect app-domain
     - "":
     - "":
     - repl:
