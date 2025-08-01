@@ -1,0 +1,9 @@
+# https://ghostty.org/docs/config.
+
+background = 15191e
+foreground = feffff
+
+font-family = Monaco
+font-size = 13.5
+
+cursor-style-blink = false
