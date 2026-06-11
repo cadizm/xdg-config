@@ -21,7 +21,8 @@ windows:
         layout: even-horizontal
         panes:
             - jshell:
-                - JENV_VERSION=21.0.6 jshell
+                #- JENV_VERSION=21.0.6 jshell
+                - jshell
             - ipython:
                 - workon ipython
                 - ipython
@@ -62,3 +63,9 @@ windows:
           - git fetch &
           - echo "./scripts/localnginx.sh --use-local-apiv3 dms_translation_service"
           - echo "cd apps/lab && ./pnpm start"
+    - application-infrastructure:
+        root: ~/workspace/src/application-infrastructure/
+        layout: 1c15,318x42,0,0{151x42,0,0,20,166x42,152,0,21}
+        panes:
+          - workon application-infrastructure
+          - workon application-infrastructure
