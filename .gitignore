@@ -1,12 +1,12 @@
 coc/
 configstore/
 exercism/user.json
+gcloud/
+gh-copilot/
 gh/hosts.yml
+github-copilot/
 iterm2/
 jgit/
 lvim/
 redgate/
 simple-update-notifier/
-gh-copilot/
-github-copilot/
-gcloud/
