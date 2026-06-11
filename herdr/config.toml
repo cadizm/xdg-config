@@ -1,0 +1,11 @@
+onboarding = false
+
+[worktrees]
+directory = "~/workspace/src/uc-worktrees"
+
+[keys]
+prefix = "ctrl+b"
+close_workspace = "prefix+alt+d"
+new_worktree = "prefix+shift+c"
+open_worktree = "prefix+shift+o"
+remove_worktree = "prefix+shift+d"

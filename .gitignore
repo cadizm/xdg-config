@@ -5,8 +5,11 @@ gcloud/
 gh-copilot/
 gh/hosts.yml
 github-copilot/
+herdr/herdr*
+herdr/session.json
 iterm2/
 jgit/
 lvim/
+opencode/
 redgate/
 simple-update-notifier/
