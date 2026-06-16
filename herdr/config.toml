@@ -4,8 +4,27 @@ onboarding = false
 directory = "~/workspace/src/uc-worktrees"
 
 [keys]
-prefix = "ctrl+b"
+prefix = "ctrl+v"
 close_workspace = "prefix+alt+d"
 new_worktree = "prefix+shift+c"
 open_worktree = "prefix+shift+o"
 remove_worktree = "prefix+shift+d"
+split_vertical = "prefix+|"
+switch_tab = ""  # override default "prefix+1..9"
+switch_workspace = "prefix+1..9"
+focus_agent = "prefix+shift+1..9"
+last_pane = "prefix+v"
+
+next_tab = ""
+previous_tab = ""
+previous_workspace = "prefix+p"
+next_workspace = "prefix+n"
+
+
+[ui]
+sidebar_min_width = 25
+sidebar_max_width = 100
+sidebar_width = 50
+
+[theme]
+name = "catppuccin"

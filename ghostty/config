@@ -4,6 +4,16 @@ background = 15191e
 foreground = feffff
 
 font-family = Monaco
-font-size = 13.5
+font-size = 13
+font-thicken = true
 
 cursor-style-blink = false
+macos-titlebar-style = hidden
+background-opacity = 0.95
+
+# Emacs word navigation (readline)
+keybind = super+d=unbind
+keybind = super+b=esc:b
+keybind = super+f=esc:f
+keybind = super+d=esc:d
+keybind = super+backspace=esc:backspace
