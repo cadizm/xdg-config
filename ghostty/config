@@ -17,3 +17,7 @@ keybind = super+b=esc:b
 keybind = super+f=esc:f
 keybind = super+d=esc:d
 keybind = super+backspace=esc:backspace
+
+# Map Ctrl+Enter to send a standard carriage return
+# Fix sending ;5;13~ to the terminal
+keybind = ctrl+enter=text:\r
