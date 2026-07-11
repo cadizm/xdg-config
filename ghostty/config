@@ -2,14 +2,16 @@
 
 background = 15191e
 foreground = feffff
+background-opacity = 0.95
+macos-titlebar-style = hidden
 
 font-family = Monaco
 font-size = 13
 font-thicken = true
 
+cursor-style = block
 cursor-style-blink = false
-macos-titlebar-style = hidden
-background-opacity = 0.95
+shell-integration-features = no-cursor
 
 # Emacs word navigation (readline)
 keybind = super+d=unbind
