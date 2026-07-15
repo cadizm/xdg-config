@@ -20,6 +20,9 @@ keybind = super+f=esc:f
 keybind = super+d=esc:d
 keybind = super+backspace=esc:backspace
 
+# This is currently broken in 1.3+
+# selection-word-chars = " /'\"│`|:;,()[]{}<>$"
+
 # Map Ctrl+Enter to send a standard carriage return
 # Fix sending ;5;13~ to the terminal
 keybind = ctrl+enter=text:\r
