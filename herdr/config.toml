@@ -14,18 +14,25 @@ switch_tab = ""  # override default "prefix+1..9"
 switch_workspace = "prefix+1..9"
 focus_agent = "prefix+shift+1..9"
 last_pane = "prefix+v"
+goto = ["prefix+g", "prefix+'"]
 
 next_tab = ""
 previous_tab = ""
 previous_workspace = "prefix+p"
 next_workspace = "prefix+n"
 
+[[keys.command]]
+key = "prefix+]"
+type = "shell"
+command = "herdr pane send-text \"$(herdr pane current | jq -r '.result.pane.pane_id')\" \"$(pbpaste)\""
 
 [ui]
 sidebar_min_width = 25
 sidebar_max_width = 100
 sidebar_width = 50
+agent_panel_sort = "priority"
 
 agent_panel_sort = "priority"
 [theme]
 name = "catppuccin"
+auto_switch = false
