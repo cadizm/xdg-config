@@ -30,9 +30,9 @@ command = "herdr pane send-text \"$(herdr pane current | jq -r '.result.pane.pan
 sidebar_min_width = 25
 sidebar_max_width = 100
 sidebar_width = 50
-agent_panel_sort = "priority"
 
 agent_panel_sort = "priority"
+
 [theme]
 name = "catppuccin"
 auto_switch = false
